@@ -8,7 +8,12 @@ For test data, you can download data from past days of trading directly from Nas
 This project is setup as a publisher and a consumer.
 
 ## How to Run
-Open the solution and run the consumer. You can do this by making sure it's your startup project and hitting F5. Once the consumer is up and running, go back to Visual Studio and right click on the Publisher project. Goto _Debug_, then _Start New Instance_. Let it start up and watch the messages flow.
+1. Install RabbitMQ and make sure it's running.
+1. Check your app.config for publisher and make sure your DataFile setting is pointing to the datafile that you've downloaded from ftp://emi.nasdaq.com/ITCH/ and that your server is pointed to RabbitMQ.
+1. Check your app.config for the consumer and ensure the server is pointed to RabbitMQ.
+1. Open the solution and set the consumer as your startup project, then hit F5.
+1. Once the consumer is up and running, go back to Visual Studio and right click on the Publisher project. Goto _Debug_, then _Start New Instance_.
+1. Let the publisher start up and watch the messages flow.
 
 ## Publisher
 First and foremost, the code for reading the file was a direct port of the ITCH 4.1 implementation written in python by Ryan Day: https://github.com/rday/ITCH41

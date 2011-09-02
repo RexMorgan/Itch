@@ -28,7 +28,7 @@ namespace Itch.Consumer
             _log.Info("Loading " + typeof(Program).Namespace + " Services...");
         }
 
-        static void Main(string[] args)
+        static void Main()
         {
             var logger = new EventLogger();
 
