@@ -18,4 +18,4 @@ The consumer listens for messages from the queue and keeps track of how many of 
 For every _SecondMessage_ that we get, we clear out all the counts and print them out to the console. This _SecondMessage_ is sent about every second and marks the number of seconds since midnight.
 
 ## Requirements
-RabbitMQ is required to be setup. You can point your publisher/consumer to point to the proper server by editing the Server key in each of the app.config files.
+RabbitMQ is required to be setup. You can point your publisher/consumer to the proper server by editing the Server key in each of the app.config files. However, they are defaulted to _localhost_.
