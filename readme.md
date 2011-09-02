@@ -3,9 +3,12 @@ This is a C# implementation of the Itch 4.1 protocol decribed here: http://nasda
 
 Please note that this is for educational purposes and probably isn't fast enough to be used in any type of a production environment. I've noticed that I'm able to publish about 3,000 messages/second and consume 1,200 messages per second, which is way too slow to actually use.
 
-For test data, you can download data from past days of trading directly from NASDAQ at: ftp://emi.nasdaq.com/ITCH/
+For test data, you can download data from past days of trading directly from Nasdaq at: ftp://emi.nasdaq.com/ITCH/
 
 This project is setup as a publisher and a consumer.
+
+## How to Run
+Open the solution and run the consumer. You can do this by making sure it's your startup project and hitting F5. Once the consumer is up and running, go back to Visual Studio and right click on the Publisher project. Goto _Debug_, then _Start New Instance_. Let it start up and watch the messages flow.
 
 ## Publisher
 First and foremost, the code for reading the file was a direct port of the ITCH 4.1 implementation written in python by Ryan Day: https://github.com/rday/ITCH41
