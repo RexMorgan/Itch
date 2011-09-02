@@ -16,7 +16,7 @@ This project is setup as a publisher and a consumer.
 1. Let the publisher start up and watch the messages flow.
 
 ## Publisher
-First and foremost, the code for reading the file was a direct port of the ITCH 4.1 implementation written in python by Ryan Day: https://github.com/rday/ITCH41
+First and foremost, the code for reading the file was a direct port from the ITCH 4.1 implementation written in python by Ryan Day: https://github.com/rday/ITCH41
 
 This console application reads through the data file defined in the app.config and publishes them to our message queue. It does this as fast as it can. The code can parse about 450k messages/second, however publishing them to the queue reduces the speed to about 3,000/second.
 
